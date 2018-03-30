@@ -1,26 +1,26 @@
 package de.usermanager.controller
 
-import de.usermanager.viewModel.User
+import de.usermanager.controller.resources.UserResource
 
 class UserStub {
     companion object {
-        fun list(): List<User> {
-            return mutableListOf<User>()
+        fun list(): List<UserResource> {
+            return mutableListOf<UserResource>()
         }
 
-        fun get(id: Long): User {
-            return User()
+        fun get(id: Long): UserResource {
+            return UserResource()
         }
 
-        fun create(user: User): User {
-            return User()
+        fun create(user: UserResource): UserResource {
+            return UserResource()
         }
 
-        fun update(id: Long, user: User): User {
+        fun update(id: Long, user: UserResource): UserResource {
             return user
         }
 
-        fun delete(id: Long): User {
+        fun delete(id: Long): UserResource {
             return get(id)
         }
     }
