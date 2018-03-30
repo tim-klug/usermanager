@@ -1,6 +1,6 @@
-package de.usermanager.viewModel
+package de.usermanager.controller.resources
 
-data class User(
+data class UserResource(
         val firstName:String = "FirstName",
         val lastName:String = "LastName",
         val email:String = "email@domain.com"
